@@ -1,38 +1,39 @@
 # ✨ AI Concepts
 *AI concepts and terminology glossary*  
 
-- Agent: a system that uses an LLM as a reasoning engine to decide which actions to take and in what order to solve a task. Core components are: LLM, Tools, Memory and Agent Loop
-- Agent Loop: iterative cycle where an agent processes input, makes decisions, takes actions (like calling tools), and updates its state based on the results. Thought → Action → Observation → repeat till Final Answer
+- **Agent**: a system that uses an LLM as a reasoning engine to decide which actions to take and in what order to solve a task. Core components are: LLM, Tools, Memory and Agent Loop
+- **Agent Loop**: iterative cycle where an agent processes input, makes decisions, takes actions (like calling tools), and updates its state based on the results. Thought → Action → Observation → repeat till Final Answer
 - Anthropic: Leading LLM provider, maker of Claude AI
-- Attention: core mechanism in transformer models that lets each token ["focus"](https://distill.pub/2016/augmented-rnns/) on relevant parts of the input sequence when computing its representation. 
+- **Attention**: core mechanism in transformer models that lets each token ["focus"](https://distill.pub/2016/augmented-rnns/) on relevant parts of the input sequence when computing its representation. 
 - ChatGPT: conversational AI chatbot developed by OpenAI that uses GPT LLMs to generate human-like text responses.
 - Claude: family of LLMs developed by Anthropic
-- Context Window: Maximum number of tokens an LLM can process in a single input/output request. Input tokens = prompt + history + tools, Output tokens = generated response, Total: must fit within model limit e.g. GPT-4o-mini: 128k tokens
-- FSM (Finite State Machine): see SM:
-- GGUF (GPT-Generated Unified Format):
-- GPT (Generative Pre-trained Transformer): a type of LLM that uses the transformer architecture to generate text, after being pre-trained on vast amounts of data
-- GPU (Graphics Processing Unit)
-- Inference: Using trained ML models to make predictions or generate outputs in real-time based on new, unseen data. Gen-AI inference has specialized system requirements of compute, hardware
-- LangChain: An open-source framework designed to simplify the creation of applications using large language models by providing abstractions for agents, chains, and tools
+- **Context Window**: Maximum number of tokens an LLM can process in a single input/output request. Input tokens = prompt + history + tools, Output tokens = generated response, Total: must fit within model limit e.g. GPT-4o-mini: 128k tokens
+- **FLOPS (FLoating-point OPerations per Second)**: hardware performance (FLOPS: floating-point operations per second) for different floating-point precisions used in ML, e.g. high-precision FP32 (32 bits), 2x faster and 2x less memory but reduced precision FP16 (16 bits)
+- **FSM (Finite State Machine)**: see SM:
+- **GGUF (GPT-Generated Unified Format)**:
+- **GPT (Generative Pre-trained Transformer)**: a type of LLM that uses the transformer architecture to generate text, after being pre-trained on vast amounts of data
+- **GPU (Graphics Processing Unit)**: General-purpose parallel compute (originally graphics) with high FP32/FP16 performance e.g. NVIDIA A100/H100 
+- **Inference**: Using trained ML models to make predictions or generate outputs in real-time based on new, unseen data. Gen-AI inference has specialized system requirements of compute, hardware
+- **LangChain**: An open-source framework designed to simplify the creation of applications using large language models by providing abstractions for agents, chains, and tools
 - LLM (Large Language Model)
-- MCP (Model Context Protocol): An open standard protocol from Anthropic that allows AI models to connect to external data sources and tools in a standardized way
-- MoE (Mixture of Experts)
-- NPU (Neural Processing Unit)
+- **MCP (Model Context Protocol)**: An open standard protocol from Anthropic that allows AI models to connect to external data sources and tools in a standardized way
+- MoE (Mixture of Experts):
+- **NPU (Neural Processing Unit)**: Specialized AI accelerators 10-100x power-efficient and optimized for AI/ML - matrix multiplication e.g. Apple Neural Engine, Google TPU, Qualcomm NPU. Costs a fraction of GPUs.
 - OpenAI
 - OpenClaw
-- Pre-Training: Initial phase of training a model on a large, unlabeled dataset to learn general patterns and language structures before specific task training
-- Post-Training: phase after pre-training that involves fine-tuning the model on specific tasks or aligning it with human preferences to improve its performance and safety
-- RAG (Retrieval Augmented Generation): Technique to optimize LLM output by retrieving relevant information from external knowlege base 
+- **Pre-Training**: Initial phase of training a model on a large, unlabeled dataset to learn general patterns and language structures before specific task training
+- **Post-Training**: phase after pre-training that involves fine-tuning the model on specific tasks or aligning it with human preferences to improve its performance and safety
+- **RAG (Retrieval Augmented Generation)**: Technique to optimize LLM output by retrieving relevant information from external knowlege base 
 - ReAct (Reason + Act) paradigm:
-- RL (Reinforcement Learning): A machine learning method where an agent learns to make decisions by performing actions and receiving rewards or penalties within an environment.
-- RLHF (RL from Human Feedback): Training technique to align models with human intent by using human feedback to train a reward model
+- **RL (Reinforcement Learning)**: A machine learning method where an agent learns to make decisions by performing actions and receiving rewards or penalties within an environment.
+- **RLHF (RL from Human Feedback)**: Training technique to align models with human intent by using human feedback to train a reward model
 - RNN (Recurrent Neural Network):
-- Self-Attention: A specific mechanism within the Transformer architecture where the model calculates the importance of every token in a sequence relative to every other token to capture context
-- SFT: The process of further training a pre-trained model on a labeled dataset to adapt it for specific tasks.
+- **Self-Attention**: A specific mechanism within the Transformer architecture where the model calculates the importance of every token in a sequence relative to every other token to capture context
+- **SFT (Supervised Fine-Tuning)**: The process of further training a pre-trained model on a labeled dataset to adapt it for specific tasks.
 - SLM
-- SM (State Machine): a model of computation with a fixed set of states, transitions between them based on inputs/events, and outputs/actions triggered by state changes. Core components are: States, Transitions, Events/Inputs, Actions, Intial/Final states.
+- **SM (State Machine)**: a model of computation with a fixed set of states, transitions between them based on inputs/events, and outputs/actions triggered by state changes. Core components are: States, Transitions, Events/Inputs, Actions, Intial/Final states.
 - Sparse Attention:
-- Temperature: Number used to control the randomness of a model's output; low temperature results in more deterministic outputs, while high temperature increases creativity and variability
-- Token: basic unit of text that language models process, representing a word, part of a word, or a character, which is encoded into a numerical ID. 3 words equal 4 tokens approximately.
+- **Temperature**: Number used to control the randomness of a model's output; low temperature results in more deterministic outputs, while high temperature increases creativity and variability
+- **Token**: basic unit of text that language models process, representing a word, part of a word, or a character, which is encoded into a numerical ID. 3 words equal 4 tokens approximately.
 - TPU (Tensor Processing Unit):
-- Transformer architecture: A neural network architecture introduced in the paper ["Attention Is All You Need"](https://arxiv.org/pdf/1706.03762) that relies entirely on self-attention mechanisms, enabling parallel processing of sequences.
+- **Transformer architecture**: A neural network architecture introduced in the paper ["Attention Is All You Need"](https://arxiv.org/pdf/1706.03762) that relies entirely on self-attention mechanisms, enabling parallel processing of sequences.
