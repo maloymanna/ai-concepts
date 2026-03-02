@@ -1,4 +1,4 @@
-# ✨ AI Concepts
+# ✨ AI Concepts Glossary
 *AI concepts and terminology glossary*  
 
 - 🤖 **Agent**: a system that uses an LLM as a reasoning engine to decide which actions to take and in what order to solve a task. Core components are: LLM, Tools, Memory and Agent Loop
